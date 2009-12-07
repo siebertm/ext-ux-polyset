@@ -19,20 +19,22 @@ Ext.onReady(function() {
         removeButtonConfig: {
           text: "go away"
         },
-        contentPanel: function() {
-          ++i;
+        addInitialPanels: true,
+        contentPanel: function(i) {
           return {
             layout: "form",
             items: [{
               fieldLabel: "Data " + i,
               xtype: "textfield",
+              value: "Wert " + i,
               name: ("data_" + i)
             }],
             getValue: function() {
               return { data: this.items.get(0).getValue() };
             }
           };
-        }
+        },
+        value: [1, 2, 3, 4]
       }],
       buttons: [{
         text: "get value",
