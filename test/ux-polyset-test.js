@@ -31,6 +31,8 @@ Ext.onReady(function() {
             }],
             getValue: function() {
               return { data: this.items.get(0).getValue() };
+            },
+            setValue: function() {
             }
           };
         },
