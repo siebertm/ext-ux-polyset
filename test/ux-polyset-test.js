@@ -23,6 +23,7 @@ Ext.onReady(function() {
         contentPanel: function(i) {
           return {
             layout: "form",
+            autoHeight: true,
             items: [{
               fieldLabel: "Data " + i,
               xtype: "textfield",
