@@ -20,6 +20,9 @@ Ext.onReady(function() {
           text: "go away"
         },
         addInitialPanels: true,
+        headerPanel: {
+          html: "<h1>Header</h1>"
+        },
         contentPanel: function(i) {
           return {
             layout: "form",
